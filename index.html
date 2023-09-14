@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather widget</title>
+    <link rel = "stylesheet" href="./styles/normalize.css"></link>
+    <link rel = "stylesheet" href="./styles/style.css"></link>
+    <script src="./js/main.js"> </script>
+    <style type="text/css">
+        @font-face {
+            font-family: "Roboto";
+            src: url("./fonts/Roboto-Regular.woff2") format("woff2");
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "Roboto";
+            src: url("./fonts/Roboto-Bold.woff2") format("woff2");
+            font-weight: 700;
+            font-style: normal;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: #000000;
+            color: #ffffff;
+            font-family: "Roboto", "Helvetica Neue", sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div class = 'container'>
+<div class = 'table'>
+    <div class = 'table_header'>
+    <h1 class = 'title'>OpenWeather API</h1>
+    </div>
+    <div class = 'table_body' id = 'tableBody'>
+        <div class = 'table_row'>
+            <div class = 'title_city flex_item'>
+                Kyiv
+            </div>
+            <div class = 'weather flex_item'>
+                <span class = 'weather_temp'>4</span>
+                <span class = 'weather_description'>clear sky</span>
+            </div>
+            <div class="icon flex_item" >
+                <img src="http://openweathermap.org/img/wn/01d@2x.png">
+            </div>
+        </div>
+        <div class = 'table_row'>
+            <div class = 'title_city flex_item'>
+                London
+            </div>
+            <div class = 'weather flex_item'>
+                <span class = 'weather_temp'>4</span>
+                <span class = 'weather_description'>clear sky</span>
+            </div>
+            <div class="icon flex_item" >
+                <img src="http://openweathermap.org/img/wn/01d@2x.png">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
