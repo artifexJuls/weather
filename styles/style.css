@@ -1,58 +1,61 @@
-
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.table{
+.container[hidden] {
+    display: none;
+}
+
+.table {
     width: 450px;
     margin-top: 20px;
 }
 
-.table_header{
+.table_header {
     background: #736968;
     text-align: center;
     padding: 4px;
 }
 
-.table_header .title{
+.table_header .title {
     margin: 0;
 }
 
-.table_body{
+.table_body {
     background: #2d2d45;
     padding: 16px;
 }
 
-.table_body .table_row{
+.table_body .table_row {
     display: flex;
     justify-content: space-between;
 }
 
-.table_body .table_row .title_city{
+.table_body .table_row .title_city {
     font-size: 29px;
     font-weight: bold;
 }
 
-.table_body .table_row .flex_item{
+.table_body .table_row .flex_item {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1 1 150px;
 }
 
-.table_body .table_row .weather{
+.table_body .table_row .weather {
     display: flex;
     flex-direction: column;
     font-size: 12px;
     padding: 2px;
 }
 
-.table_body .table_row .weather .weather_temp:after{
-    content: '\00b0'
-}
-
 .table_body .table_row .icon img {
     width: 75px;
+}
+
+.weather_temp::after {
+    content: '\00b0 C';
 }
