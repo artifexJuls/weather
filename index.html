@@ -49,7 +49,7 @@
             position: fixed;
             top: 0;
         }
-        
+
 
         .preloader #circle {
             animation: loading 2s linear infinite;
@@ -70,7 +70,12 @@
         <div class="table">
             <div class="table_header">
                 <h1 class="title">OpenWeather API</h1>
+                <p style="display: none; color: #9f4e4e" class="error" id="searchError">Search area is empty</p>
             </div>
+            <form class = 'search' action="https://meteofor.com.ua/" method="GET">
+                <input class="input" type="text" name="search" placeholder="Search">
+                <input class="button" type="submit" value="Search">
+            </form>
             <div class="table_body" id="tableBody">
                 <!-- data will be insert by scripts -->
             </div>
@@ -81,6 +86,9 @@
             <circle cx="50" cy="50" r="32" stroke-width="8" stroke="#E0E0E0" stroke-dasharray="50.26548245743669 50.26548245743669" fill="none" stroke-linecap="round"></circle>
         </svg>
     </div>
+<footer>
+    <span> info taken from <a href="https://openweathermap.org/">OpenWeather</a></span>
+</footer>
 </body>
 
 </html>

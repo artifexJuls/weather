@@ -1,13 +1,3 @@
-const exm = {
-    "weather": [
-        { "description": "overcast clouds", "icon": "04n" }
-    ],
-    "main": {
-        "temp": 290.62,
-    },
-    "name": "Kyiv",
-}
-
 export class Forecast {
     #name = ''
     #temp = ''
