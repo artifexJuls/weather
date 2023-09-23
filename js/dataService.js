@@ -1,10 +1,9 @@
 const API_BASE_URL = 'http://api.openweathermap.org'
-const APP_ID = 'bf35cac91880cb98375230fb443a116f'
+const APP_ID = '945767452af0ffeb3cc98c27a721332a'
 const appIdParam = `appid=${APP_ID}`
 
 const urls = {
     weather:    `${API_BASE_URL}/data/2.5/weather`,
-    // icon:       `http://openweathermap.org/img/wn/`  
 }
 
 class DataService {
@@ -16,7 +15,7 @@ class DataService {
         if (response.ok) {
             return await response.json()
         } else {
-            console.error(`Error! Cann't get data on url: ${url}.
+            console.error(`Error! Can't get data on url: ${url}.
                 Details: status ${response.status}, message: ${response.statusText}
             `)
         }
